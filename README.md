@@ -1,1 +1,3 @@
-# dev-base
+```shell
+chezmoi update && source ~/.bashrc
+```
