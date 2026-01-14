@@ -1,9 +1,10 @@
 {
-  "name": "thesixonenine/dev/base:trixie",
+  "name": "dev-base",
   "build": {
     "dockerfile": "Dockerfile",
     "args": { "GITHUB_PAT": "${localEnv:GITHUB_PAT}" }
   },
+  "postStartCommand": "chezmoi update",
   "customizations": { "vscode": { "settings": {
         "extensions.allowed": {
             "microsoft": false,
